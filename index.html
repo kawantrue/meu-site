@@ -69,6 +69,7 @@
             justify-content: center;
             gap: 50px;
             animation: fadeIn 2s ease-in-out;
+            flex-wrap: wrap; /* Ajuste para responsividade */
         }
 
         .skill {
@@ -78,6 +79,7 @@
             text-align: center;
             width: 200px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px; /* Espaçamento entre as skill boxes */
         }
 
         .skill i {
@@ -114,12 +116,74 @@
         }
 
         footer {
-    margin-top: 80px;
-    padding: 65px 15px; 
-    background-color: #333;
-    color: white;
-    text-align: center;
-}
+            margin-top: 80px;
+            padding: 65px 15px; 
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .intro {
+                font-size: 1rem;
+            }
+
+            .skills {
+                gap: 30px; /* Reduzir o espaçamento entre as skills */
+            }
+
+            .skill {
+                width: 160px; /* Ajustar o tamanho das skill boxes */
+                padding: 15px;
+            }
+
+            .contact {
+                font-size: 1rem;
+            }
+
+            .button {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
+
+            footer {
+                padding: 40px 15px; /* Ajuste no padding do rodapé */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .intro {
+                font-size: 0.9rem;
+            }
+
+            .skills {
+                flex-direction: column; /* Colocar as skills em coluna */
+                gap: 20px;
+            }
+
+            .skill {
+                width: 100%; /* Fazer as skill boxes ocuparem toda a largura */
+                padding: 10px;
+            }
+
+            .button {
+                width: 100%; /* Botão ocupando toda a largura */
+                padding: 12px;
+            }
+
+            footer {
+                padding: 30px 15px; /* Ajuste no padding do rodapé */
+            }
+        }
     </style>
 </head>
 <body>
